@@ -354,6 +354,19 @@
 <wire x1="50.475" y1="-20.2" x2="-4.9" y2="-20.2" width="0.127" layer="21"/>
 <text x="17" y="-19" size="1.27" layer="21">uSomIQ AM335x</text>
 </package>
+<package name="83611-9006">
+<pad name="2" x="1.27" y="0" drill="0.7112" diameter="1.016"/>
+<pad name="1" x="0" y="0" drill="0.7112" diameter="1.016"/>
+<pad name="3" x="2.54" y="0" drill="0.7112" diameter="1.016"/>
+<pad name="4" x="3.81" y="0" drill="0.7112" diameter="1.016"/>
+<pad name="5" x="5.08" y="0" drill="0.7112" diameter="1.016"/>
+<pad name="6" x="0.635" y="2.54" drill="0.7112" diameter="1.016"/>
+<pad name="7" x="1.905" y="2.54" drill="0.7112" diameter="1.016"/>
+<pad name="8" x="3.175" y="2.54" drill="0.7112" diameter="1.016"/>
+<pad name="9" x="4.445" y="2.54" drill="0.7112" diameter="1.016"/>
+<pad name="MOUNT@1" x="-4.6355" y="3.81" drill="2.794"/>
+<pad name="MOUNT@2" x="9.7155" y="3.81" drill="2.794"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USOMIQ-AM335X">
@@ -516,6 +529,24 @@
 <pin name="GND@2" x="182.88" y="5.08" length="middle" rot="R180"/>
 <pin name="GND@3" x="182.88" y="2.54" length="middle" rot="R180"/>
 </symbol>
+<symbol name="83611-9006">
+<wire x1="0" y1="-2.54" x2="0" y2="27.94" width="0.254" layer="94"/>
+<wire x1="0" y1="27.94" x2="15.24" y2="27.94" width="0.254" layer="94"/>
+<wire x1="15.24" y1="27.94" x2="15.24" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<pin name="1" x="-5.08" y="25.4" length="middle"/>
+<pin name="2" x="-5.08" y="22.86" length="middle"/>
+<pin name="3" x="-5.08" y="20.32" length="middle"/>
+<pin name="4" x="-5.08" y="17.78" length="middle"/>
+<pin name="5" x="-5.08" y="15.24" length="middle"/>
+<pin name="6" x="-5.08" y="12.7" length="middle"/>
+<pin name="7" x="-5.08" y="10.16" length="middle"/>
+<pin name="8" x="-5.08" y="7.62" length="middle"/>
+<pin name="9" x="-5.08" y="5.08" length="middle"/>
+<pin name="MOUNT@1" x="-5.08" y="2.54" length="middle"/>
+<pin name="MOUNT@2" x="-5.08" y="0" length="middle"/>
+<text x="0" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="USOMIQ-AM335X">
@@ -669,6 +700,31 @@
 <connect gate="G$1" pin="P3-70" pad="P$140"/>
 <connect gate="G$1" pin="P3-8" pad="P$78"/>
 <connect gate="G$1" pin="P3-9" pad="P$79"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="83611-9006">
+<gates>
+<gate name="G$1" symbol="83611-9006" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="83611-9006">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="G$1" pin="MOUNT@1" pad="MOUNT@1"/>
+<connect gate="G$1" pin="MOUNT@2" pad="MOUNT@2"/>
 </connects>
 <technologies>
 <technology name=""/>
