@@ -367,6 +367,31 @@
 <pad name="MOUNT@1" x="-4.6355" y="3.81" drill="2.794"/>
 <pad name="MOUNT@2" x="9.7155" y="3.81" drill="2.794"/>
 </package>
+<package name="189-009-613R571">
+<pad name="A-3" x="0" y="0" drill="1.1938"/>
+<pad name="A-1" x="-5.5372" y="0" drill="1.1938"/>
+<pad name="A-2" x="-2.7686" y="0" drill="1.1938"/>
+<pad name="A-4" x="2.7686" y="0" drill="1.1938"/>
+<pad name="A-5" x="5.5372" y="0" drill="1.1938"/>
+<pad name="A-7" x="-1.3843" y="-2.8448" drill="1.1938"/>
+<pad name="A-8" x="1.3843" y="-2.8448" drill="1.1938"/>
+<pad name="A-9" x="4.1529" y="-2.8448" drill="1.1938"/>
+<pad name="A-6" x="-4.1529" y="-2.8448" drill="1.1938"/>
+<pad name="P$1" x="1.3843" y="3.9116" drill="1.1938"/>
+<pad name="P$2" x="4.1529" y="3.9116" drill="1.1938"/>
+<pad name="P$3" x="-1.3843" y="3.9116" drill="1.1938"/>
+<pad name="P$4" x="-4.1529" y="3.9116" drill="1.1938"/>
+<pad name="B-3" x="0" y="6.7564" drill="1.1938"/>
+<pad name="B-4" x="2.7686" y="6.7564" drill="1.1938"/>
+<pad name="B-5" x="5.5372" y="6.7564" drill="1.1938"/>
+<pad name="B2" x="-2.7686" y="6.7564" drill="1.1938"/>
+<pad name="B-1" x="-5.5372" y="6.7564" drill="1.1938"/>
+<wire x1="-8.3058" y1="-10.922" x2="8.3058" y2="-10.922" width="0.127" layer="21"/>
+<pad name="MOUNT@1" x="-12.4968" y="5.1562" drill="3.048"/>
+<pad name="MOUNT@2" x="12.4968" y="5.1562" drill="3.048"/>
+<pad name="MOUNT@3" x="12.4968" y="-2.8448" drill="3.048"/>
+<pad name="MOUNT@4" x="-12.4968" y="-2.8448" drill="3.048"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USOMIQ-AM335X">
@@ -547,6 +572,24 @@
 <pin name="MOUNT@2" x="-5.08" y="0" length="middle"/>
 <text x="0" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="GENERIC-DB9">
+<wire x1="0" y1="-5.08" x2="0" y2="25.4" width="0.254" layer="94"/>
+<wire x1="0" y1="25.4" x2="15.24" y2="25.4" width="0.254" layer="94"/>
+<wire x1="15.24" y1="25.4" x2="15.24" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
+<pin name="1" x="-5.08" y="22.86" visible="pin" length="middle"/>
+<pin name="2" x="-5.08" y="20.32" visible="pin" length="middle"/>
+<pin name="3" x="-5.08" y="17.78" visible="pin" length="middle"/>
+<pin name="4" x="-5.08" y="15.24" visible="pin" length="middle"/>
+<pin name="5" x="-5.08" y="12.7" visible="pin" length="middle"/>
+<pin name="6" x="-5.08" y="10.16" visible="pin" length="middle"/>
+<pin name="7" x="-5.08" y="7.62" visible="pin" length="middle"/>
+<pin name="8" x="-5.08" y="5.08" visible="pin" length="middle"/>
+<pin name="9" x="-5.08" y="2.54" visible="pin" length="middle"/>
+<text x="0" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
+<pin name="MOUNT@0" x="-5.08" y="0" visible="pin" length="middle"/>
+<pin name="MOUNT@1" x="-5.08" y="-2.54" visible="pin" length="middle"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="USOMIQ-AM335X">
@@ -725,6 +768,43 @@
 <connect gate="G$1" pin="9" pad="9"/>
 <connect gate="G$1" pin="MOUNT@1" pad="MOUNT@1"/>
 <connect gate="G$1" pin="MOUNT@2" pad="MOUNT@2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="189-009-613R571">
+<gates>
+<gate name="G$1" symbol="GENERIC-DB9" x="-25.4" y="-2.54"/>
+<gate name="G$2" symbol="GENERIC-DB9" x="17.78" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="189-009-613R571">
+<connects>
+<connect gate="G$1" pin="1" pad="A-1"/>
+<connect gate="G$1" pin="2" pad="A-2"/>
+<connect gate="G$1" pin="3" pad="A-3"/>
+<connect gate="G$1" pin="4" pad="A-4"/>
+<connect gate="G$1" pin="5" pad="A-5"/>
+<connect gate="G$1" pin="6" pad="A-6"/>
+<connect gate="G$1" pin="7" pad="A-7"/>
+<connect gate="G$1" pin="8" pad="A-8"/>
+<connect gate="G$1" pin="9" pad="A-9"/>
+<connect gate="G$1" pin="MOUNT@0" pad="MOUNT@1"/>
+<connect gate="G$1" pin="MOUNT@1" pad="MOUNT@2"/>
+<connect gate="G$2" pin="1" pad="B-1"/>
+<connect gate="G$2" pin="2" pad="B-3"/>
+<connect gate="G$2" pin="3" pad="B-4"/>
+<connect gate="G$2" pin="4" pad="B-5"/>
+<connect gate="G$2" pin="5" pad="B2"/>
+<connect gate="G$2" pin="6" pad="P$1"/>
+<connect gate="G$2" pin="7" pad="P$2"/>
+<connect gate="G$2" pin="8" pad="P$3"/>
+<connect gate="G$2" pin="9" pad="P$4"/>
+<connect gate="G$2" pin="MOUNT@0" pad="MOUNT@3"/>
+<connect gate="G$2" pin="MOUNT@1" pad="MOUNT@4"/>
 </connects>
 <technologies>
 <technology name=""/>
