@@ -165,7 +165,7 @@ RU-28</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ADM3311E">
+<deviceset name="ADM3311E" prefix="U">
 <gates>
 <gate name="G$1" symbol="ADM3311" x="0" y="0"/>
 </gates>

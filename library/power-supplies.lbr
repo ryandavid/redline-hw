@@ -1349,7 +1349,7 @@ Source: www.bourns.com .. 6000_series.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TPS54260">
+<deviceset name="TPS54260" prefix="U">
 <gates>
 <gate name="G$1" symbol="TPS54260" x="0" y="5.08"/>
 </gates>
