@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8,22 +8,22 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -32,8 +32,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -41,17 +41,17 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -19421,13 +19421,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="U201" library="power-supplies" deviceset="TPS54260" device=""/>
 <part name="D201" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD" value="B360B"/>
 <part name="C202" library="rcl" deviceset="C-US" device="C1210" value="4.7uF, 50V"/>
-<part name="C203" library="rcl" deviceset="C-US" device="C1210" value="4.7uF, 50V"/>
 <part name="GND204" library="supply1" deviceset="GND" device=""/>
-<part name="GND206" library="supply1" deviceset="GND" device=""/>
 <part name="D204" library="diode" deviceset="ZENER-DIODE" device="SMB" value="47V"/>
 <part name="GND201" library="supply1" deviceset="GND" device=""/>
-<part name="D203" library="diode" deviceset="SCHOTTKY-DIODE" device="SMD" value="B360B"/>
-<part name="D205" library="diode" deviceset="ZENER-DIODE" device="SMB" value="47V"/>
+<part name="D205" library="diode" deviceset="ZENER-DIODE" device="SOT23" value="47V"/>
 <part name="GND202" library="supply1" deviceset="GND" device=""/>
 <part name="R203" library="rcl" deviceset="R-US_" device="R0603" value="384K"/>
 <part name="R204" library="rcl" deviceset="R-US_" device="R0603" value="69.8K"/>
@@ -19449,14 +19446,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="C207" library="rcl" deviceset="C-US" device="C0603" value="330pF, 50V"/>
 <part name="GND211" library="supply1" deviceset="GND" device=""/>
 <part name="GND213" library="supply1" deviceset="GND" device=""/>
-<part name="C208" library="rcl" deviceset="C-US" device="C2220K" value="47uF, 16V"/>
 <part name="C209" library="rcl" deviceset="C-US" device="C2220K" value="47uF, 16V"/>
-<part name="GND216" library="supply1" deviceset="GND" device=""/>
 <part name="GND220" library="supply1" deviceset="GND" device=""/>
 <part name="R202" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="LED201" library="led" deviceset="LED" device="SML0603"/>
 <part name="GND205" library="supply1" deviceset="GND" device=""/>
-<part name="R201" library="rcl" deviceset="R-US_" device="R0603" value="NL"/>
 <part name="GND308" library="supply1" deviceset="GND" device=""/>
 <part name="TB401" library="titleblock" deviceset="REDLINE-TITLEBLOCK" device=""/>
 <part name="IC401" library="adafruit" deviceset="DS3231" device="/SO"/>
@@ -19519,7 +19513,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="+3V3402" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V3405" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+301" library="supply1" deviceset="+5V" device=""/>
-<part name="P+201" library="supply1" deviceset="+5V" device=""/>
 <part name="P+202" library="supply1" deviceset="+5V" device=""/>
 <part name="GND301" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3301" library="supply1" deviceset="+3V3" device=""/>
@@ -19554,6 +19547,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="GND306" library="supply1" deviceset="GND" device=""/>
 <part name="X301" library="con-hirose" deviceset="MINI-USB-" device="UX60-MB-5ST"/>
 <part name="GND307" library="supply1" deviceset="GND" device=""/>
+<part name="D1" library="diode" deviceset="BAS40" device=""/>
+<part name="TP5" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="TP6" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="P+1" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -19926,7 +19923,6 @@ CAN is also available for very basic, low cost nodes</text>
 <text x="116.84" y="203.2" size="5.08" layer="100">Power Supply</text>
 <text x="114.3" y="198.12" size="1.778" layer="100">Based on TI application design, TIDA-00322</text>
 <text x="20.32" y="17.78" size="1.778" layer="100">VDD_PGOOD is an open-drain output that asserts when power supply is out of spec</text>
-<text x="40.64" y="88.9" size="1.778" layer="100">TODO: Need to revisit this!  Backfeed</text>
 <text x="154.94" y="71.12" size="1.778" layer="100">Monitor VIGN through dedicated feed so we don't get backfeed from PWR_EN in our measurement</text>
 </plain>
 <instances>
@@ -19934,12 +19930,9 @@ CAN is also available for very basic, low cost nodes</text>
 <instance part="U201" gate="G$1" x="124.46" y="157.48"/>
 <instance part="D201" gate="G$1" x="38.1" y="172.72"/>
 <instance part="C202" gate="G$1" x="63.5" y="167.64"/>
-<instance part="C203" gate="G$1" x="73.66" y="167.64"/>
 <instance part="GND204" gate="1" x="63.5" y="160.02"/>
-<instance part="GND206" gate="1" x="73.66" y="160.02"/>
 <instance part="D204" gate="G$1" x="48.26" y="165.1" rot="R90"/>
 <instance part="GND201" gate="1" x="48.26" y="160.02"/>
-<instance part="D203" gate="G$1" x="40.64" y="142.24"/>
 <instance part="D205" gate="G$1" x="48.26" y="134.62" rot="R90"/>
 <instance part="GND202" gate="1" x="48.26" y="127"/>
 <instance part="R203" gate="G$1" x="73.66" y="142.24"/>
@@ -19962,15 +19955,11 @@ CAN is also available for very basic, low cost nodes</text>
 <instance part="C207" gate="G$1" x="177.8" y="134.62"/>
 <instance part="GND211" gate="1" x="160.02" y="127"/>
 <instance part="GND213" gate="1" x="177.8" y="127"/>
-<instance part="C208" gate="G$1" x="213.36" y="172.72"/>
 <instance part="C209" gate="G$1" x="231.14" y="172.72"/>
-<instance part="GND216" gate="1" x="213.36" y="165.1"/>
 <instance part="GND220" gate="1" x="231.14" y="165.1"/>
 <instance part="R202" gate="G$1" x="63.5" y="50.8" rot="R90"/>
 <instance part="LED201" gate="G$1" x="63.5" y="38.1"/>
 <instance part="GND205" gate="1" x="63.5" y="25.4"/>
-<instance part="R201" gate="G$1" x="55.88" y="99.06" rot="R180"/>
-<instance part="P+201" gate="1" x="63.5" y="63.5"/>
 <instance part="P+202" gate="1" x="231.14" y="187.96"/>
 <instance part="D202" gate="1" x="40.64" y="149.86"/>
 <instance part="R209" gate="G$1" x="203.2" y="93.98"/>
@@ -19990,6 +19979,8 @@ CAN is also available for very basic, low cost nodes</text>
 <instance part="GND219" gate="1" x="223.52" y="38.1"/>
 <instance part="GND217" gate="1" x="213.36" y="38.1"/>
 <instance part="GND222" gate="1" x="231.14" y="38.1"/>
+<instance part="D1" gate="1" x="40.64" y="142.24"/>
+<instance part="P+1" gate="1" x="63.5" y="63.5"/>
 </instances>
 <busses>
 </busses>
@@ -20005,20 +19996,16 @@ CAN is also available for very basic, low cost nodes</text>
 <segment>
 <pinref part="D201" gate="G$1" pin="C"/>
 <pinref part="C202" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="172.72" x2="63.5" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="172.72" x2="55.88" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="172.72" x2="48.26" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="172.72" x2="40.64" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="170.18" x2="63.5" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="C203" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="170.18" x2="73.66" y2="172.72" width="0.1524" layer="91"/>
 <junction x="63.5" y="172.72"/>
 <pinref part="D204" gate="G$1" pin="C"/>
 <wire x1="48.26" y1="167.64" x2="48.26" y2="172.72" width="0.1524" layer="91"/>
 <junction x="48.26" y="172.72"/>
 <pinref part="U201" gate="G$1" pin="VIN"/>
-<wire x1="119.38" y1="172.72" x2="73.66" y2="172.72" width="0.1524" layer="91"/>
-<junction x="73.66" y="172.72"/>
+<wire x1="119.38" y1="172.72" x2="63.5" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="C201" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="170.18" x2="55.88" y2="172.72" width="0.1524" layer="91"/>
 <junction x="55.88" y="172.72"/>
@@ -20034,10 +20021,6 @@ CAN is also available for very basic, low cost nodes</text>
 <segment>
 <pinref part="C202" gate="G$1" pin="2"/>
 <pinref part="GND204" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C203" gate="G$1" pin="2"/>
-<pinref part="GND206" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="D204" gate="G$1" pin="A"/>
@@ -20088,10 +20071,6 @@ CAN is also available for very basic, low cost nodes</text>
 <pinref part="GND213" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C208" gate="G$1" pin="2"/>
-<pinref part="GND216" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C209" gate="G$1" pin="2"/>
 <pinref part="GND220" gate="1" pin="GND"/>
 </segment>
@@ -20134,9 +20113,9 @@ CAN is also available for very basic, low cost nodes</text>
 </net>
 <net name="VIGN" class="0">
 <segment>
-<pinref part="D203" gate="G$1" pin="A"/>
 <label x="25.4" y="142.24" size="1.778" layer="95"/>
 <wire x1="38.1" y1="142.24" x2="25.4" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="D1" gate="1" pin="A"/>
 </segment>
 <segment>
 <pinref part="D207" gate="1" pin="A"/>
@@ -20146,13 +20125,13 @@ CAN is also available for very basic, low cost nodes</text>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="D203" gate="G$1" pin="C"/>
 <pinref part="D205" gate="G$1" pin="C"/>
 <wire x1="43.18" y1="142.24" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="142.24" x2="48.26" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="R203" gate="G$1" pin="1"/>
 <junction x="48.26" y="142.24"/>
 <wire x1="68.58" y1="142.24" x2="48.26" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="D1" gate="1" pin="C"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -20169,6 +20148,7 @@ CAN is also available for very basic, low cost nodes</text>
 <junction x="81.28" y="142.24"/>
 <wire x1="43.18" y1="149.86" x2="88.9" y2="149.86" width="0.1524" layer="91"/>
 <junction x="88.9" y="149.86"/>
+<pinref part="D202" gate="1" pin="C"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -20242,11 +20222,6 @@ CAN is also available for very basic, low cost nodes</text>
 <label x="40.64" y="43.18" size="1.778" layer="95"/>
 <junction x="63.5" y="43.18"/>
 </segment>
-<segment>
-<pinref part="R201" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="99.06" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
-<label x="30.48" y="99.06" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="N$10" class="0">
 <segment>
@@ -20267,20 +20242,6 @@ CAN is also available for very basic, low cost nodes</text>
 <wire x1="160.02" y1="139.7" x2="160.02" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RESET" class="0">
-<segment>
-<pinref part="R201" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="99.06" x2="83.82" y2="99.06" width="0.1524" layer="91"/>
-<label x="83.82" y="99.06" size="1.778" layer="95" rot="MR0"/>
-</segment>
-</net>
-<net name="N$40" class="0">
-<segment>
-<pinref part="R202" gate="G$1" pin="2"/>
-<wire x1="63.5" y1="60.96" x2="63.5" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="P+201" gate="1" pin="+5V"/>
-</segment>
-</net>
 <net name="+5V" class="0">
 <segment>
 <wire x1="231.14" y1="185.42" x2="231.14" y2="177.8" width="0.1524" layer="91"/>
@@ -20288,16 +20249,17 @@ CAN is also available for very basic, low cost nodes</text>
 <pinref part="R207" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="177.8" x2="200.66" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="177.8" x2="200.66" y2="175.26" width="0.1524" layer="91"/>
-<pinref part="C208" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="177.8" x2="213.36" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="177.8" x2="213.36" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="C209" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="177.8" x2="231.14" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="177.8" x2="231.14" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="177.8" x2="231.14" y2="175.26" width="0.1524" layer="91"/>
 <junction x="200.66" y="177.8"/>
-<junction x="213.36" y="177.8"/>
 <junction x="231.14" y="177.8"/>
 <pinref part="P+202" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="R202" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="60.96" x2="63.5" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="P+1" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="PWR_EN" class="0">
@@ -20628,11 +20590,6 @@ CAN is also available for very basic, low cost nodes</text>
 <wire x1="81.28" y1="101.6" x2="114.3" y2="101.6" width="0.1524" layer="91"/>
 <label x="114.3" y="101.6" size="1.778" layer="95" rot="MR0"/>
 </segment>
-<segment>
-<pinref part="P301" gate="G$1" pin="P2-70"/>
-<wire x1="81.28" y1="93.98" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
-<label x="114.3" y="93.98" size="1.778" layer="95" rot="MR0"/>
-</segment>
 </net>
 <net name="ETH_TX+" class="0">
 <segment>
@@ -20705,6 +20662,13 @@ CAN is also available for very basic, low cost nodes</text>
 <label x="20.32" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="ETH_TX-" class="0">
+<segment>
+<pinref part="P301" gate="G$1" pin="P2-70"/>
+<wire x1="81.28" y1="93.98" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
+<label x="114.3" y="93.98" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -20766,6 +20730,8 @@ CAN is also available for very basic, low cost nodes</text>
 <instance part="+3V3405" gate="G$1" x="157.48" y="111.76"/>
 <instance part="+3V3403" gate="G$1" x="114.3" y="193.04"/>
 <instance part="R405" gate="G$1" x="101.6" y="172.72"/>
+<instance part="TP5" gate="G$1" x="93.98" y="180.34" rot="R90"/>
+<instance part="TP6" gate="G$1" x="93.98" y="172.72" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -20864,13 +20830,6 @@ CAN is also available for very basic, low cost nodes</text>
 <wire x1="121.92" y1="180.34" x2="106.68" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RTC_32KHZ" class="0">
-<segment>
-<pinref part="R404" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="180.34" x2="71.12" y2="180.34" width="0.1524" layer="91"/>
-<label x="71.12" y="180.34" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="I2C0_SCL" class="0">
 <segment>
 <pinref part="IC401" gate="G$1" pin="SCL"/>
@@ -20896,20 +20855,21 @@ CAN is also available for very basic, low cost nodes</text>
 <net name="N$13" class="0">
 <segment>
 <pinref part="U401" gate="G$1" pin="V+"/>
-<wire x1="55.88" y1="93.98" x2="53.34" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="93.98" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="93.98" x2="50.8" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="93.98" x2="50.8" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C403" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="101.6" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="101.6" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="101.6" x2="43.18" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="U401" gate="G$1" pin="C2+"/>
-<wire x1="55.88" y1="91.44" x2="55.88" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="C402" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="104.14" x2="35.56" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="104.14" x2="35.56" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="104.14" x2="35.56" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U401" gate="G$1" pin="C2+"/>
+<wire x1="55.88" y1="91.44" x2="53.34" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="91.44" x2="53.34" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -21045,10 +21005,10 @@ CAN is also available for very basic, low cost nodes</text>
 <net name="N$22" class="0">
 <segment>
 <pinref part="C405" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="106.68" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="106.68" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="106.68" x2="48.26" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="106.68" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="U401" gate="G$1" pin="C1+"/>
-<wire x1="50.8" y1="81.28" x2="55.88" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="81.28" x2="55.88" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
@@ -21146,20 +21106,21 @@ CAN is also available for very basic, low cost nodes</text>
 <net name="N$14" class="0">
 <segment>
 <pinref part="U402" gate="G$1" pin="V+"/>
-<wire x1="185.42" y1="96.52" x2="182.88" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="96.52" x2="182.88" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="96.52" x2="180.34" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="96.52" x2="180.34" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="C411" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="104.14" x2="172.72" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="104.14" x2="172.72" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="104.14" x2="172.72" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="U402" gate="G$1" pin="C2+"/>
-<wire x1="185.42" y1="93.98" x2="185.42" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="C410" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="106.68" x2="165.1" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="106.68" x2="165.1" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="106.68" x2="165.1" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U402" gate="G$1" pin="C2+"/>
+<wire x1="185.42" y1="93.98" x2="182.88" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="93.98" x2="182.88" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -21211,10 +21172,10 @@ CAN is also available for very basic, low cost nodes</text>
 <net name="N$34" class="0">
 <segment>
 <pinref part="C413" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="109.22" x2="180.34" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="109.22" x2="180.34" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="109.22" x2="177.8" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="109.22" x2="177.8" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="U402" gate="G$1" pin="C1+"/>
-<wire x1="180.34" y1="83.82" x2="185.42" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="83.82" x2="185.42" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$35" class="0">
@@ -21363,11 +21324,16 @@ CAN is also available for very basic, low cost nodes</text>
 <wire x1="121.92" y1="172.72" x2="106.68" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="RTC_RST" class="0">
+<net name="N$1" class="0">
+<segment>
+<pinref part="R404" gate="G$1" pin="1"/>
+<pinref part="TP5" gate="G$1" pin="TP"/>
+</segment>
+</net>
+<net name="N$41" class="0">
 <segment>
 <pinref part="R405" gate="G$1" pin="1"/>
-<wire x1="96.52" y1="172.72" x2="71.12" y2="172.72" width="0.1524" layer="91"/>
-<label x="71.12" y="172.72" size="1.778" layer="95"/>
+<pinref part="TP6" gate="G$1" pin="TP"/>
 </segment>
 </net>
 </nets>
