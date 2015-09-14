@@ -19454,7 +19454,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="GND308" library="supply1" deviceset="GND" device=""/>
 <part name="TB401" library="titleblock" deviceset="REDLINE-TITLEBLOCK" device=""/>
 <part name="IC401" library="adafruit" deviceset="DS3231" device="/SO"/>
-<part name="R404" library="rcl" deviceset="R-US_" device="R0603" value="100"/>
 <part name="C406" library="rcl" deviceset="C-US" device="C0603" value="1uF, 16V"/>
 <part name="GND407" library="supply1" deviceset="GND" device=""/>
 <part name="GND408" library="supply1" deviceset="GND" device=""/>
@@ -19484,10 +19483,8 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="C408" library="resistor" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="GND406" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3401" library="supply1" deviceset="+3V3" device=""/>
-<part name="C401" library="resistor" deviceset="C-US" device="C0603" value="10uF"/>
 <part name="C404" library="resistor" deviceset="C-US" device="C0603" value="10uF"/>
 <part name="GND402" library="supply1" deviceset="GND" device=""/>
-<part name="GND401" library="supply1" deviceset="GND" device=""/>
 <part name="U402" library="misc-ics" deviceset="ADM3311E" device=""/>
 <part name="C411" library="resistor" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="C410" library="resistor" deviceset="C-US" device="C0603" value="0.1uF"/>
@@ -19504,10 +19501,8 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="C415" library="resistor" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="GND415" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3404" library="supply1" deviceset="+3V3" device=""/>
-<part name="C409" library="resistor" deviceset="C-US" device="C0603" value="10uF"/>
 <part name="C412" library="resistor" deviceset="C-US" device="C0603" value="10uF"/>
 <part name="GND411" library="supply1" deviceset="GND" device=""/>
-<part name="GND409" library="supply1" deviceset="GND" device=""/>
 <part name="R401" library="resistor" deviceset="R-US_" device="R0603" value="1k"/>
 <part name="R407" library="resistor" deviceset="R-US_" device="R0603" value="1k"/>
 <part name="+3V3402" library="supply1" deviceset="+3V3" device=""/>
@@ -19518,7 +19513,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="+3V3301" library="supply1" deviceset="+3V3" device=""/>
 <part name="D202" library="diode" deviceset="BAS40" device=""/>
 <part name="+3V3403" library="supply1" deviceset="+3V3" device=""/>
-<part name="R405" library="rcl" deviceset="R-US_" device="R0603" value="100"/>
 <part name="R209" library="rcl" deviceset="R-US_" device="R0603" value="20K"/>
 <part name="C210" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="GND221" library="supply1" deviceset="GND" device=""/>
@@ -19527,10 +19521,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="C201" library="rcl" deviceset="C-US" device="C1210" value="0.1uF"/>
 <part name="GND203" library="supply1" deviceset="GND" device=""/>
 <part name="D207" library="diode" deviceset="BAS40" device=""/>
-<part name="D208" library="diode" deviceset="ZENER-DIODE" device="SMB" value="1.8V"/>
+<part name="D208" library="diode" deviceset="ZENER-DIODE" device="SOT23" value="1.8V"/>
 <part name="GND215" library="supply1" deviceset="GND" device=""/>
 <part name="R210" library="rcl" deviceset="R-US_" device="R0603" value="20K"/>
-<part name="D209" library="diode" deviceset="ZENER-DIODE" device="SMB" value="1.8V"/>
+<part name="D209" library="diode" deviceset="ZENER-DIODE" device="SOT23" value="1.8V"/>
 <part name="R212" library="rcl" deviceset="R-US_" device="R0603" value="1K"/>
 <part name="C211" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="GND219" library="supply1" deviceset="GND" device=""/>
@@ -20678,7 +20672,6 @@ CAN is also available for very basic, low cost nodes</text>
 <instances>
 <instance part="TB401" gate="G$1" x="0" y="0"/>
 <instance part="IC401" gate="G$1" x="137.16" y="170.18"/>
-<instance part="R404" gate="G$1" x="101.6" y="180.34"/>
 <instance part="C406" gate="G$1" x="114.3" y="154.94"/>
 <instance part="GND407" gate="1" x="114.3" y="147.32"/>
 <instance part="GND408" gate="1" x="154.94" y="147.32"/>
@@ -20700,10 +20693,8 @@ CAN is also available for very basic, low cost nodes</text>
 <instance part="C408" gate="G$1" x="127" y="96.52"/>
 <instance part="GND406" gate="1" x="111.76" y="38.1"/>
 <instance part="+3V3401" gate="G$1" x="20.32" y="114.3"/>
-<instance part="C401" gate="G$1" x="33.02" y="48.26"/>
 <instance part="C404" gate="G$1" x="43.18" y="48.26"/>
 <instance part="GND402" gate="1" x="43.18" y="38.1"/>
-<instance part="GND401" gate="1" x="33.02" y="38.1"/>
 <instance part="U402" gate="G$1" x="190.5" y="66.04"/>
 <instance part="C411" gate="G$1" x="172.72" y="99.06"/>
 <instance part="C410" gate="G$1" x="165.1" y="99.06"/>
@@ -20720,18 +20711,15 @@ CAN is also available for very basic, low cost nodes</text>
 <instance part="C415" gate="G$1" x="256.54" y="99.06"/>
 <instance part="GND415" gate="1" x="241.3" y="40.64"/>
 <instance part="+3V3404" gate="G$1" x="149.86" y="111.76"/>
-<instance part="C409" gate="G$1" x="162.56" y="50.8"/>
 <instance part="C412" gate="G$1" x="172.72" y="50.8"/>
 <instance part="GND411" gate="1" x="172.72" y="40.64"/>
-<instance part="GND409" gate="1" x="162.56" y="40.64"/>
 <instance part="R401" gate="G$1" x="27.94" y="96.52" rot="R90"/>
 <instance part="R407" gate="G$1" x="157.48" y="99.06" rot="R90"/>
 <instance part="+3V3402" gate="G$1" x="27.94" y="114.3"/>
 <instance part="+3V3405" gate="G$1" x="157.48" y="111.76"/>
 <instance part="+3V3403" gate="G$1" x="114.3" y="193.04"/>
-<instance part="R405" gate="G$1" x="101.6" y="172.72"/>
-<instance part="TP5" gate="G$1" x="93.98" y="180.34" rot="R90"/>
-<instance part="TP6" gate="G$1" x="93.98" y="172.72" rot="R90"/>
+<instance part="TP5" gate="G$1" x="104.14" y="180.34" rot="R90"/>
+<instance part="TP6" gate="G$1" x="104.14" y="172.72" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -20778,11 +20766,6 @@ CAN is also available for very basic, low cost nodes</text>
 <junction x="111.76" y="91.44"/>
 </segment>
 <segment>
-<pinref part="C401" gate="G$1" pin="2"/>
-<pinref part="GND401" gate="1" pin="GND"/>
-<wire x1="33.02" y1="43.18" x2="33.02" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C404" gate="G$1" pin="2"/>
 <pinref part="GND402" gate="1" pin="GND"/>
 <wire x1="43.18" y1="43.18" x2="43.18" y2="40.64" width="0.1524" layer="91"/>
@@ -20813,11 +20796,6 @@ CAN is also available for very basic, low cost nodes</text>
 <junction x="241.3" y="93.98"/>
 </segment>
 <segment>
-<pinref part="C409" gate="G$1" pin="2"/>
-<pinref part="GND409" gate="1" pin="GND"/>
-<wire x1="162.56" y1="45.72" x2="162.56" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C412" gate="G$1" pin="2"/>
 <pinref part="GND411" gate="1" pin="GND"/>
 <wire x1="172.72" y1="45.72" x2="172.72" y2="43.18" width="0.1524" layer="91"/>
@@ -20826,8 +20804,8 @@ CAN is also available for very basic, low cost nodes</text>
 <net name="N$8" class="0">
 <segment>
 <pinref part="IC401" gate="G$1" pin="32KHZ"/>
-<pinref part="R404" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="180.34" x2="106.68" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="TP5" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="I2C0_SCL" class="0">
@@ -21057,13 +21035,8 @@ CAN is also available for very basic, low cost nodes</text>
 <wire x1="20.32" y1="88.9" x2="20.32" y2="111.76" width="0.1524" layer="91"/>
 <junction x="43.18" y="88.9"/>
 <pinref part="C404" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="50.8" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
 <junction x="43.18" y="88.9"/>
-<pinref part="C401" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="53.34" x2="43.18" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="53.34" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="53.34" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
-<junction x="43.18" y="53.34"/>
+<wire x1="43.18" y1="50.8" x2="43.18" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U402" gate="G$1" pin="VCC"/>
@@ -21075,13 +21048,8 @@ CAN is also available for very basic, low cost nodes</text>
 <wire x1="149.86" y1="91.44" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
 <junction x="172.72" y="91.44"/>
 <pinref part="C412" gate="G$1" pin="1"/>
-<wire x1="172.72" y1="53.34" x2="172.72" y2="55.88" width="0.1524" layer="91"/>
 <junction x="172.72" y="91.44"/>
-<pinref part="C409" gate="G$1" pin="1"/>
-<wire x1="172.72" y1="55.88" x2="172.72" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="55.88" x2="162.56" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="55.88" x2="162.56" y2="53.34" width="0.1524" layer="91"/>
-<junction x="172.72" y="55.88"/>
+<wire x1="172.72" y1="53.34" x2="172.72" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V3402" gate="G$1" pin="+3V3"/>
@@ -21320,19 +21288,7 @@ CAN is also available for very basic, low cost nodes</text>
 <net name="N$39" class="0">
 <segment>
 <pinref part="IC401" gate="G$1" pin="/RST"/>
-<pinref part="R405" gate="G$1" pin="2"/>
 <wire x1="121.92" y1="172.72" x2="106.68" y2="172.72" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="R404" gate="G$1" pin="1"/>
-<pinref part="TP5" gate="G$1" pin="TP"/>
-</segment>
-</net>
-<net name="N$41" class="0">
-<segment>
-<pinref part="R405" gate="G$1" pin="1"/>
 <pinref part="TP6" gate="G$1" pin="TP"/>
 </segment>
 </net>
