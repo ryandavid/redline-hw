@@ -9941,10 +9941,10 @@ Source: www.fairchildsemi.com</description>
 <parts>
 <part name="FRAME101" library="titleblock" deviceset="REDLINE-COVER-TITLEBLOCK" device=""/>
 <part name="TB301" library="titleblock" deviceset="REDLINE-TITLEBLOCK" device=""/>
-<part name="R301" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R301" library="rcl" deviceset="R-US_" device="R0603" value="1K"/>
 <part name="LED301" library="led" deviceset="LED" device="SML0603"/>
 <part name="GND302" library="supply1" deviceset="GND" device=""/>
-<part name="R302" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R302" library="rcl" deviceset="R-US_" device="R0603" value="1K"/>
 <part name="LED302" library="led" deviceset="LED" device="SML0603"/>
 <part name="GND304" library="supply1" deviceset="GND" device=""/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
@@ -9997,7 +9997,7 @@ Source: www.fairchildsemi.com</description>
 <part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-SPDT" device="SMD2"/>
 <part name="Q2" library="transistor-power" deviceset="P-MOSFET-SO8" device=""/>
 <part name="R11" library="rcl" deviceset="R-US_" device="R0603" value="220"/>
-<part name="R12" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R12" library="rcl" deviceset="R-US_" device="R0603" value="1K"/>
 <part name="LED1" library="led" deviceset="LED" device="SML0603"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="R13" library="rcl" deviceset="R-US_" device="R0603" value="4.7k"/>
@@ -10017,13 +10017,19 @@ Source: www.fairchildsemi.com</description>
 <part name="R5" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="R6" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
+<part name="R17" library="rcl" deviceset="R-US_" device="R0603" value="0"/>
+<part name="GND19" library="supply1" deviceset="GND" device=""/>
+<part name="R18" library="rcl" deviceset="R-US_" device="R0603" value="0"/>
+<part name="GND20" library="supply1" deviceset="GND" device=""/>
+<part name="R19" library="rcl" deviceset="R-US_" device="R0603" value="0"/>
+<part name="GND21" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="235.204" y="31.75" size="2.54" layer="100">0.1</text>
 <text x="10.16" y="198.12" size="7.62" layer="100">ADS-B Receiver</text>
-<text x="10.16" y="190.5" size="2.54" layer="100">Intended for ODROID-C2</text>
+<text x="10.16" y="190.5" size="2.54" layer="100">Daughterboard for ODROID-C2</text>
 <text x="10.16" y="162.56" size="3.048" layer="100">Pages</text>
 <text x="10.16" y="157.48" size="2.54" layer="100">1.  SOM and Power Header</text>
 <wire x1="10.16" y1="162.306" x2="66.04" y2="162.306" width="0.1524" layer="100"/>
@@ -10070,6 +10076,7 @@ Source: www.fairchildsemi.com</description>
 <text x="66.04" y="91.44" size="1.778" layer="100">Power from Anker PowerCore 10,000</text>
 <text x="63.5" y="86.36" size="1.778" layer="100">SOC controls shutdown via KEEP_ALIVE</text>
 <text x="30.48" y="83.82" size="1.778" layer="100">SOC monitors SWITCH_MONITOR to watch when user switches off power and then perform graceful shutdown</text>
+<text x="170.18" y="93.98" size="1.778" layer="100">ODROID-C2 40-pin Header</text>
 </plain>
 <instances>
 <instance part="TB301" gate="G$1" x="0" y="0"/>
@@ -10405,11 +10412,20 @@ Source: www.fairchildsemi.com</description>
 <label x="139.7" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="CO2_AD" class="0">
+<segment>
+<pinref part="JP3" gate="A" pin="1"/>
+<wire x1="187.96" y1="119.38" x2="228.6" y2="119.38" width="0.1524" layer="91"/>
+<label x="228.6" y="119.38" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
 <plain>
 <text x="119.38" y="200.66" size="5.08" layer="100">GPS Receiver</text>
+<text x="116.84" y="106.68" size="1.778" layer="100">u-blox CAM-M8Q</text>
+<text x="106.68" y="104.14" size="1.778" layer="100">UART default baud rate 38.4kbps</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="124.46" y="137.16"/>
@@ -10536,7 +10552,7 @@ Source: www.fairchildsemi.com</description>
 <text x="203.2" y="40.64" size="1.778" layer="100" align="center">RC Low Pass using jellybean parts
 Cut-off around ~340Hz</text>
 <text x="86.36" y="50.8" size="1.778" layer="100">BMP180</text>
-<text x="121.92" y="116.84" size="1.778" layer="100">I2C Address = 0x69</text>
+<text x="121.92" y="116.84" size="1.778" layer="100">I2C Address = 0x68</text>
 <text x="121.92" y="114.3" size="1.778" layer="100">Max 400kHz</text>
 <text x="78.74" y="48.26" size="1.778" layer="100">I2C Address = 0xEF</text>
 <text x="81.28" y="45.72" size="1.778" layer="100">Max 3.4MHz</text>
@@ -10549,13 +10565,13 @@ Cut-off around ~340Hz</text>
 <instance part="U3" gate="G$1" x="91.44" y="68.58"/>
 <instance part="U4" gate="G$1" x="134.62" y="142.24"/>
 <instance part="+3V3" gate="G$1" x="114.3" y="180.34"/>
-<instance part="GND7" gate="1" x="114.3" y="124.46"/>
+<instance part="GND7" gate="1" x="114.3" y="121.92"/>
 <instance part="C1" gate="G$1" x="109.22" y="170.18"/>
 <instance part="GND8" gate="1" x="109.22" y="162.56"/>
-<instance part="C3" gate="G$1" x="99.06" y="132.08"/>
-<instance part="GND9" gate="1" x="99.06" y="124.46"/>
-<instance part="C4" gate="G$1" x="106.68" y="132.08"/>
-<instance part="GND10" gate="1" x="106.68" y="124.46"/>
+<instance part="C3" gate="G$1" x="78.74" y="132.08"/>
+<instance part="GND9" gate="1" x="78.74" y="121.92"/>
+<instance part="C4" gate="G$1" x="88.9" y="132.08"/>
+<instance part="GND10" gate="1" x="88.9" y="121.92"/>
 <instance part="+3V13" gate="G$1" x="109.22" y="93.98"/>
 <instance part="C5" gate="G$1" x="116.84" y="86.36"/>
 <instance part="GND11" gate="1" x="116.84" y="78.74"/>
@@ -10574,6 +10590,12 @@ Cut-off around ~340Hz</text>
 <instance part="+3V9" gate="G$1" x="172.72" y="86.36"/>
 <instance part="C7" gate="G$1" x="172.72" y="58.42"/>
 <instance part="GND17" gate="1" x="172.72" y="50.8"/>
+<instance part="R17" gate="G$1" x="165.1" y="127" rot="R90"/>
+<instance part="GND19" gate="1" x="165.1" y="119.38"/>
+<instance part="R18" gate="G$1" x="99.06" y="129.54" rot="R90"/>
+<instance part="GND20" gate="1" x="99.06" y="121.92"/>
+<instance part="R19" gate="G$1" x="106.68" y="129.54" rot="R90"/>
+<instance part="GND21" gate="1" x="106.68" y="121.92"/>
 </instances>
 <busses>
 </busses>
@@ -10586,7 +10608,7 @@ Cut-off around ~340Hz</text>
 <wire x1="114.3" y1="134.62" x2="114.3" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="GND@17"/>
 <wire x1="114.3" y1="132.08" x2="114.3" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="129.54" x2="114.3" y2="127" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="129.54" x2="114.3" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="132.08" x2="114.3" y2="132.08" width="0.1524" layer="91"/>
 <junction x="114.3" y="132.08"/>
 <pinref part="U4" gate="G$1" pin="GND@15"/>
@@ -10600,10 +10622,12 @@ Cut-off around ~340Hz</text>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="88.9" y1="127" x2="88.9" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
 <pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="78.74" y1="127" x2="78.74" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -10626,6 +10650,18 @@ Cut-off around ~340Hz</text>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
 <pinref part="GND17" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND19" gate="1" pin="GND"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R19" gate="G$1" pin="1"/>
+<pinref part="GND21" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -10706,16 +10742,16 @@ Cut-off around ~340Hz</text>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="REGOUT"/>
-<wire x1="116.84" y1="147.32" x2="99.06" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="147.32" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="147.32" x2="78.74" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="147.32" x2="78.74" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="CPOUT"/>
-<wire x1="116.84" y1="144.78" x2="106.68" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="144.78" x2="106.68" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="144.78" x2="88.9" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="144.78" x2="88.9" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IMU_INT" class="0">
@@ -10775,9 +10811,52 @@ Cut-off around ~340Hz</text>
 <junction x="226.06" y="71.12"/>
 </segment>
 </net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="AD0"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="152.4" y1="144.78" x2="165.1" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="144.78" x2="165.1" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="FSYNC"/>
+<pinref part="R18" gate="G$1" pin="2"/>
+<wire x1="116.84" y1="139.7" x2="99.06" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="139.7" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$13" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="CLKIN"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="116.84" y1="137.16" x2="106.68" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="137.16" x2="106.68" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,3,101.6,147.32,U$2,16_ANT,N$6,,,"/>
+<approved hash="104,3,147.32,157.48,U$2,23/RESET_N,GPS_RESET,,,"/>
+<approved hash="104,3,147.32,152.4,U$2,9/VCC,+3V3,,,"/>
+<approved hash="104,3,147.32,147.32,U$2,1/VCC_IO,+3V3,,,"/>
+<approved hash="104,4,106.68,73.66,U3,VDD,+3V3,,,"/>
+<approved hash="104,4,106.68,68.58,U3,VDDIO,+3V3,,,"/>
+<approved hash="113,1,254.406,48.0314,FRAME101,,,,,"/>
+<approved hash="113,2,48.5817,26.67,LED301,,,,,"/>
+<approved hash="113,2,86.6817,26.67,LED302,,,,,"/>
+<approved hash="113,2,184.192,142.109,JP3,,,,,"/>
+<approved hash="113,3,172.157,104.14,B2,,,,,"/>
+<approved hash="113,2,75.9629,138.299,JP4,,,,,"/>
+<approved hash="113,2,75.9629,110.359,JP5,,,,,"/>
+<approved hash="113,4,134.62,144.632,U4,,,,,"/>
+<approved hash="113,2,97.79,138.438,S2,,,,,"/>
+<approved hash="113,2,86.1932,127,Q2,,,,,"/>
+<approved hash="113,2,117.162,26.67,LED1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
