@@ -9983,10 +9983,6 @@ Source: www.fairchildsemi.com</description>
 <part name="C5" library="rcl" deviceset="C-US" device="C0603" value="2.2nF"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="R7" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="R8" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
-<part name="+3V15" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
@@ -9999,8 +9995,6 @@ Source: www.fairchildsemi.com</description>
 <part name="R12" library="rcl" deviceset="R-US_" device="R0603" value="1K"/>
 <part name="LED1" library="led" deviceset="LED" device="SML0603"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="R13" library="rcl" deviceset="R-US_" device="R0603" value="4.7k"/>
-<part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="R14" library="rcl" deviceset="R-US_" device="R0603" value="4.7k"/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
 <part name="U1" library="SparkFun-Sensors" deviceset="GAS_SENSOR" device="" value="SEN-09403"/>
@@ -10096,7 +10090,7 @@ Source: www.fairchildsemi.com</description>
 <instance part="JP3" gate="A" x="185.42" y="142.24" rot="R180"/>
 <instance part="JP4" gate="G$1" x="60.96" y="144.78" rot="R180"/>
 <instance part="JP5" gate="G$1" x="60.96" y="111.76" rot="R180"/>
-<instance part="P+1" gate="1" x="109.22" y="152.4"/>
+<instance part="P+1" gate="1" x="109.22" y="157.48"/>
 <instance part="GND1" gate="1" x="88.9" y="106.68"/>
 <instance part="P+2" gate="1" x="195.58" y="185.42"/>
 <instance part="GND2" gate="1" x="172.72" y="101.6"/>
@@ -10116,8 +10110,6 @@ Source: www.fairchildsemi.com</description>
 <instance part="R12" gate="G$1" x="116.84" y="40.64" rot="R90"/>
 <instance part="LED1" gate="G$1" x="116.84" y="27.94"/>
 <instance part="GND13" gate="1" x="116.84" y="15.24"/>
-<instance part="R13" gate="G$1" x="208.28" y="111.76" rot="R90"/>
-<instance part="GND14" gate="1" x="208.28" y="101.6"/>
 <instance part="R5" gate="G$1" x="119.38" y="129.54" rot="R90"/>
 <instance part="R6" gate="G$1" x="119.38" y="114.3" rot="R90"/>
 <instance part="GND18" gate="1" x="119.38" y="106.68"/>
@@ -10163,15 +10155,12 @@ Source: www.fairchildsemi.com</description>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="JP3" gate="A" pin="27"/>
-<wire x1="187.96" y1="152.4" x2="195.58" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="152.4" x2="195.58" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="A" pin="35"/>
 <wire x1="195.58" y1="144.78" x2="195.58" y2="132.08" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="132.08" x2="195.58" y2="127" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="127" x2="195.58" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="162.56" x2="195.58" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="162.56" x2="195.58" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="162.56" x2="195.58" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="A" pin="21"/>
 <wire x1="187.96" y1="144.78" x2="195.58" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="A" pin="11"/>
@@ -10179,7 +10168,6 @@ Source: www.fairchildsemi.com</description>
 <pinref part="JP3" gate="A" pin="7"/>
 <wire x1="187.96" y1="127" x2="195.58" y2="127" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<junction x="195.58" y="152.4"/>
 <junction x="195.58" y="144.78"/>
 <junction x="195.58" y="132.08"/>
 <junction x="195.58" y="127"/>
@@ -10188,11 +10176,6 @@ Source: www.fairchildsemi.com</description>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="116.84" y1="22.86" x2="116.84" y2="17.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R13" gate="G$1" pin="1"/>
-<pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="208.28" y1="106.68" x2="208.28" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
@@ -10267,15 +10250,15 @@ Source: www.fairchildsemi.com</description>
 <junction x="195.58" y="167.64"/>
 </segment>
 <segment>
-<pinref part="S2" gate="1" pin="O"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
-<wire x1="101.6" y1="147.32" x2="109.22" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="147.32" x2="109.22" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="119.38" x2="109.22" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="119.38" x2="109.22" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="Q2" gate="G$1" pin="D"/>
+<wire x1="109.22" y1="142.24" x2="109.22" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="121.92" x2="88.9" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="119.38" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
-<junction x="109.22" y="147.32"/>
+<pinref part="S2" gate="1" pin="S"/>
+<wire x1="101.6" y1="142.24" x2="109.22" y2="142.24" width="0.1524" layer="91"/>
+<junction x="109.22" y="142.24"/>
 </segment>
 </net>
 <net name="GPS_RXD" class="0">
@@ -10378,12 +10361,8 @@ Source: www.fairchildsemi.com</description>
 </segment>
 <segment>
 <pinref part="JP3" gate="A" pin="29"/>
-<wire x1="187.96" y1="154.94" x2="208.28" y2="154.94" width="0.1524" layer="91"/>
 <label x="228.6" y="154.94" size="1.778" layer="95" rot="MR0"/>
-<pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="154.94" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="116.84" x2="208.28" y2="154.94" width="0.1524" layer="91"/>
-<junction x="208.28" y="154.94"/>
+<wire x1="187.96" y1="154.94" x2="228.6" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDD_PGOOD3" class="0">
@@ -10416,10 +10395,10 @@ Source: www.fairchildsemi.com</description>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="S2" gate="1" pin="S"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="142.24" x2="119.38" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="142.24" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="147.32" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="S2" gate="1" pin="O"/>
+<wire x1="101.6" y1="147.32" x2="119.38" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SWITCH_MONITOR" class="0">
@@ -10439,6 +10418,13 @@ Source: www.fairchildsemi.com</description>
 <pinref part="JP3" gate="A" pin="1"/>
 <wire x1="187.96" y1="119.38" x2="228.6" y2="119.38" width="0.1524" layer="91"/>
 <label x="228.6" y="119.38" size="1.778" layer="95" rot="MR0"/>
+</segment>
+</net>
+<net name="HEATER_ENABLE" class="0">
+<segment>
+<pinref part="JP3" gate="A" pin="34"/>
+<wire x1="180.34" y1="160.02" x2="137.16" y2="160.02" width="0.1524" layer="91"/>
+<label x="137.16" y="160.02" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -10485,9 +10471,9 @@ Source: www.fairchildsemi.com</description>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="8/V_BCKUP"/>
-<pinref part="B2" gate="G$1" pin="+"/>
-<wire x1="147.32" y1="142.24" x2="170.18" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="142.24" x2="170.18" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="142.24" x2="175.26" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="B2" gate="G$1" pin="+1"/>
+<wire x1="175.26" y1="109.22" x2="175.26" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -10598,10 +10584,6 @@ Cut-off around ~340Hz</text>
 <instance part="C5" gate="G$1" x="116.84" y="86.36"/>
 <instance part="GND11" gate="1" x="116.84" y="78.74"/>
 <instance part="GND12" gate="1" x="109.22" y="58.42"/>
-<instance part="R7" gate="G$1" x="66.04" y="78.74" rot="R90"/>
-<instance part="R8" gate="G$1" x="73.66" y="78.74" rot="R90"/>
-<instance part="+3V14" gate="G$1" x="66.04" y="86.36"/>
-<instance part="+3V15" gate="G$1" x="73.66" y="86.36"/>
 <instance part="U1" gate="G$1" x="210.82" y="68.58"/>
 <instance part="R15" gate="G$1" x="233.68" y="58.42" rot="R90"/>
 <instance part="P+4" gate="1" x="180.34" y="99.06"/>
@@ -10732,14 +10714,6 @@ Cut-off around ~340Hz</text>
 <junction x="109.22" y="73.66"/>
 </segment>
 <segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="+3V14" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="+3V15" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="A1"/>
 <wire x1="195.58" y1="71.12" x2="195.58" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="71.12" x2="195.58" y2="71.12" width="0.1524" layer="91"/>
@@ -10757,23 +10731,15 @@ Cut-off around ~340Hz</text>
 <net name="I2CB_SDA" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="SDA"/>
-<wire x1="76.2" y1="71.12" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
 <label x="48.26" y="71.12" size="1.778" layer="95"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="66.04" y1="71.12" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="73.66" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
-<junction x="66.04" y="71.12"/>
+<wire x1="76.2" y1="71.12" x2="48.26" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="I2CB_SCL" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="SCL"/>
-<wire x1="76.2" y1="66.04" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
 <label x="48.26" y="66.04" size="1.778" layer="95"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="73.66" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
-<junction x="73.66" y="66.04"/>
+<wire x1="76.2" y1="66.04" x2="48.26" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
